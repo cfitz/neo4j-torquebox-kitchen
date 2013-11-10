@@ -30,6 +30,7 @@ GEM
     highline (1.6.19)
     ipaddress (0.8.0)
     json (1.7.7)
+    json (1.7.7-java)
     knife-digital_ocean (0.1.1)
       chef (>= 10.18)
       digital_ocean (~> 1.0.1)
@@ -74,6 +75,7 @@ GEM
     yajl-ruby (1.1.0)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES

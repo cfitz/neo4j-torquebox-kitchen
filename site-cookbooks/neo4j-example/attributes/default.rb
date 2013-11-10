@@ -29,7 +29,7 @@ default.openssh.server.print_motd = 'no'
 
 
 # TORQUEBOX DEFAULTS
-default[:torquebox][:download_url] = "http://repository-torquebox.forge.cloudbees.com/release/org/torquebox/torquebox-dist/2.3.2/torquebox-dist-2.3.2-bin.zip"
+default[:torquebox][:download_url] = "http://torquebox.org/release/org/torquebox/torquebox-dist/3.0.0/torquebox-dist-3.0.0-bin.zip"
 default[:torquebox][:clustered] = false
 default[:torquebox][:cluster_name] = "torquebox_staging"
 default[:torquebox][:role] = "toruqebox_staging"

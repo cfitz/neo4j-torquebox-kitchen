@@ -2,7 +2,7 @@
   "new_relic": { 
     "app_name" : "neo4j-demo-app.com"
   },
-  "java": { "jdk_version" : "7" },
+  "java": { "jdk_version" : "7", "install_flavor" : "oracle", "oracle" : { "accept_oracle_download_terms" : true } },
   "server_name": "neo4j-demo-app.com",
   "environment" : "production",
   "run_list": [

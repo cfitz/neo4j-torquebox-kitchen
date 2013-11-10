@@ -13,11 +13,11 @@ script "install-torquebox" do
   interpreter "bash"
   code <<-EOH
   unzip -o #{download_file} -d /opt/torquebox/
-  ln -s /opt/torquebox/torquebox-2.3.2 /opt/torquebox/current
+  ln -s /opt/torquebox/torquebox-3.0.0 /opt/torquebox/current
   EOH
   notifies :run, "execute[change ownership to torquebox]"
   not_if do
-    File.exists? "/opt/torquebox/torquebox-2.3.2"
+    File.exists? "/opt/torquebox/torquebox-3.0.0"
   end
   # not_if do
   #    File.exists? "/opt/torquebox/torquebox-2.2.0"
@@ -60,7 +60,7 @@ script "install torquebox backstage" do
   user "torquebox"
   cwd "/opt/torquebox"
   code <<-EOH
-  export TORQUEBOX_HOME=/opt/torquebox/torquebox-2.3.2
+  export TORQUEBOX_HOME=/opt/torquebox/current
   export JAVA_HOME=/opt/jdk7/
   export JBOSS_HOME=$TORQUEBOX_HOME/jboss
   export JRUBY_HOME=$TORQUEBOX_HOME/jruby
